@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Pages />
       <Category />
+      <Pages />
       </BrowserRouter>
     </div>
   );
