@@ -67,7 +67,7 @@ const Card = styled.div`
   img{
     border-radius: 2rem;
     postition: absolute;
-    left: 0;
+    left: 0%;
     height: 100%;
     object-fit: cover;
   }
