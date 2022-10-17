@@ -22,7 +22,12 @@ function Cuisine() {
 
 
   return (
-    <Grid>
+    <Grid
+      animate={{opacity:1}}
+      initial={{opacity: 0}}
+      exit={{opacity: 0}}
+      transition={{duration: .5}}
+    >
       {cuisine.map((item) => {
         return (
             <Card key={item.id}>
@@ -36,7 +41,7 @@ function Cuisine() {
       </Grid>
 )}
 
-const Grid = styled.div`
+const Grid = styled(motion.div)`
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
